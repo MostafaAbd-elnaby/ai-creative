@@ -9,10 +9,10 @@
 {{--                            <i class="bx bx-user"></i>--}}
                             <h3>{{__("Our Social Media")}}</h3>
                             <div class="social-links mt-3">
-                                <a href="https://twitter.com/ai_cr_agency?s=21&t=yA8uh34ZzOLQZA2CR4Czqw" class="twitter mx-lg-2"><i class="bx bxl-twitter"></i></a>
-                                <a href="https://www.facebook.com/Ai.cr.agency?mibextid=LQQJ4d" class="facebook mx-lg-2"><i class="bx bxl-facebook"></i></a>
-                                <a href="https://instagram.com/ai_cr_agency?igshid=YmMyMTA2M2Y=" class="instagram mx-lg-2"><i class="bx bxl-instagram"></i></a>
-                                <a href="https://www.snapchat.com/add/ai.creative" class="linkedin mx-lg-2"><i class="bx bxl-snapchat"></i></a>
+                                <a target="_blank" href="https://twitter.com/ai_cr_agency?s=21&t=yA8uh34ZzOLQZA2CR4Czqw" class="twitter mx-lg-2"><i class="bx bxl-twitter"></i></a>
+                                <a target="_blank" href="https://www.facebook.com/Ai.cr.agency?mibextid=LQQJ4d" class="facebook mx-lg-2"><i class="bx bxl-facebook"></i></a>
+                                <a target="_blank" href="https://instagram.com/ai_cr_agency?igshid=YmMyMTA2M2Y=" class="instagram mx-lg-2"><i class="bx bxl-instagram"></i></a>
+                                <a target="_blank" href="https://www.snapchat.com/add/ai.creative" class="linkedin mx-lg-2"><i class="bx bxl-snapchat"></i></a>
                             </div>
 
 {{--                            <p>{{__("You Can Contact Us From Our Social Account, Or Send Us Message")}}</p>--}}
@@ -22,7 +22,7 @@
                         <div class="info-box">
                             <i class="bx bx-envelope"></i>
                             <h3>{{__("Email Us")}}</h3>
-                            <p>info@aicreativesagency.com</p>
+                            <p><a href="mailto:info@aicreativeagency.com">info@AiCreativeAgency.com</a></p>
                         </div>
                     </div>
                     <div class="col-md-6">

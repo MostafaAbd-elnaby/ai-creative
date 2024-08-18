@@ -28,4 +28,9 @@
         line-height: 1.5;
         font-size: 15px;
     }
+    #hero::after {
+        left: 52%;
+        zoom: 133%;
+        background-size: cover;
+    }
   }
