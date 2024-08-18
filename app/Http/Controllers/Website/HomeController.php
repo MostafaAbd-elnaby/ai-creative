@@ -19,7 +19,7 @@ class HomeController extends Controller
     {
         App::setLocale($request->lang);
         session()->put('locale', $request->lang);
-        return view('pages.home');
+        return view('Pages.home');
     }
 
     public function sendMessage(Request $request)
