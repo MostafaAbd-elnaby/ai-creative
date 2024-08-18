@@ -1,0 +1,28 @@
+ /* Styles for small screens */
+  @media (max-width: 767px) {
+    body {
+      font-size: 16px;
+    }
+  
+    /* Mobile-specific styles */
+    .container {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+
+    .services .description {
+        font-size: 13px;
+        line-height: 28px;
+        margin-bottom: 0;
+    }
+    #hero h2 {
+        font-size: 26px;
+        font-weight: 700;
+        position: absolute;
+        bottom: 98%;
+    }
+    #hero p {
+        line-height: 1.5;
+        font-size: 15px;
+    }
+  }
