@@ -12,7 +12,8 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('Pages.home')->with('name', 'Victoria');
+        App::setLocale(session()->get('locale'));
+        return view('Pages.home');
     }
 
     public function change(Request $request)
