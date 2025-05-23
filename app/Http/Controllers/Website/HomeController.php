@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Message;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
 
 class HomeController extends Controller
@@ -18,17 +19,21 @@ class HomeController extends Controller
 
     public function change(Request $request)
     {
-        App::setLocale($request->lang);
-        session()->put('locale', $request->lang);
-        return view('Pages.home');
+        $locale = $request->input('locale');
+        $supportedLocales = ['en', 'ar'];
+        if (in_array($locale, $supportedLocales)) {
+            Session::put('locale', $locale);
+            App::setLocale($locale);
+        }
+        return back();
     }
 
     public function sendMessage(Request $request)
     {
         $validator = Validator::make($request->only(['name','email','message']), [
-            'name'    => 'required',
-            'email'   => 'required|email',
-            'message' => 'required',
+            'name'    => 'required|string|max:100',
+            'email'   => 'required|email:filter',
+            'message' => 'required|string|max:1000',
         ],
         [
             'email.required' => __('email-required'),
@@ -45,7 +50,7 @@ class HomeController extends Controller
         }
 
         Message::create($request->only(['name','email','message']));
-        return redirect()->route('home')->with('success', __('success message'));
+        return redirect()->route('home')->with('success', __('success_message'));
 
     }
 }

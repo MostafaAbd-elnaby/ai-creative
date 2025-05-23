@@ -28,7 +28,7 @@ Route::controller(AdminController::class)->prefix('/admin')->group(function (){
 });
 Route::controller(HomeController::class)->group(function (){
 
-    Route::get('/change', 'change')->name('changeLang');
+    Route::post('/change', 'change')->name('changeLang');
 
     Route::get('/','index')->name('home');
 

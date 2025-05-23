@@ -55,16 +55,6 @@
 
     <!-- Template Main JS File -->
     <script src={{asset("assets/js/main.js")}}></script>
-    <!-- Change Language Script -->
-    <script type="text/javascript">
-
-        let url = "{{ route('changeLang') }}";
-
-        $(".changeLang").change(function(){
-            window.location.href = url + "?lang="+ $(this).val();
-        });
-
-    </script>
 </body>
 
 

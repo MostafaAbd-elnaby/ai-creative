@@ -47,7 +47,7 @@
     "Your Name": "Your Name",
     "Your Email": "Your Email",
     "Message": "Message",
-    "success message": "Your Message Sent Successfully",
+    "success_message": "Your Message Sent Successfully",
     "email-required": "We need to know your email address!",
     "email-email": "Your Email Invalid",
     "name-required": "We need to know your name!",

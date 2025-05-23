@@ -15,10 +15,13 @@
                 <li><a href="#contact">{{__("Contact Us")}}</a></li>
             </ul>
             <div class="col-md-auto" style="padding: 10px 0 10px 30px;">
-                <select class="changeLang changeBtn">
-                    <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>English</option>
-                    <option value="ar" {{ session()->get('locale') == 'ar' ? 'selected' : '' }}>العربية</option>
-                </select>
+                <form action="{{route('changeLang')}}" method="POST">
+                    @csrf
+                    <select class="changeLang changeBtn" name="locale" onchange="this.form.submit()">
+                        <option value="en" {{ app()->getLocale() == 'en' ? 'selected' : '' }}>English</option>
+                        <option value="ar" {{ app()->getLocale() == 'ar' ? 'selected' : '' }}>العربية</option>
+                    </select>
+                </form>
             </div>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>

@@ -83,5 +83,9 @@
         </div>
     </div>
 </footer><!-- End Footer -->
-
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<div class="d-flex justify-content-between align-items-center">
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="whatsapp d-flex align-items-center justify-content-center">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+</div>

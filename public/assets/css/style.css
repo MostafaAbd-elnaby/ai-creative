@@ -74,6 +74,37 @@ h6,
   visibility: visible;
   opacity: 1;
 }
+/*--------------------------------------------------------------
+# Whatsapp Icon
+--------------------------------------------------------------*/
+.whatsapp {
+  position: fixed;
+  opacity: 1;
+  left: 30px;
+  bottom: 15px;
+  z-index: 99999;
+  background: #33d30dc9;
+  width: 70px;
+  height: 70px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.whatsapp i {
+  font-size: 45px;
+  color: #fff;
+  line-height: 0;
+}
+
+.whatsapp:hover {
+  background: var(--secondary);
+  color: #fff;
+}
+
+.whatsapp.active {
+  visibility: visible;
+  opacity: 1;
+}
 
 /*--------------------------------------------------------------
 # Header
