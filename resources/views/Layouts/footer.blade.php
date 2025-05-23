@@ -85,7 +85,7 @@
 </footer><!-- End Footer -->
 <div class="d-flex justify-content-between align-items-center">
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-    <a href="#" class="whatsapp d-flex align-items-center justify-content-center">
+    <a href="https://wa.me/+201068781173?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20!%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A5%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA" class="whatsapp d-flex align-items-center justify-content-center">
         <i class="bi bi-whatsapp"></i>
     </a>
 </div>
