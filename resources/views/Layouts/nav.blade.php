@@ -7,12 +7,12 @@
         </div>
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a class="active" href="{{url('/')}}">{{__("Home")}}</a></li>
-                <li><a href="#services">{{__("Services")}}</a></li>
-                <li><a href="#about">{{__("About Us")}}</a></li>
-                <li><a href="#features">{{__("Features")}}</a></li>
+                <li class="toggle-navbar-mobile"><a class="nav-link active" {{ Request::is('/') ? 'active' : '' }} href="{{url('/')}}">{{__("Home")}}</a></li>
+                <li class="toggle-navbar-mobile"><a class="nav-link" href="#services">{{__("Services")}}</a></li>
+                <li class="toggle-navbar-mobile"><a class="nav-link" href="#about">{{__("About Us")}}</a></li>
+                <li class="toggle-navbar-mobile"><a class="nav-link" href="#features">{{__("Features")}}</a></li>
                 {{-- <li><a href="{{route('page.portfolio')}}">{{__("Portfolio")}}</a></li> --}}
-                <li><a href="#contact">{{__("Contact Us")}}</a></li>
+                <li class="toggle-navbar-mobile"><a class="nav-link" href="#contact">{{__("Contact Us")}}</a></li>
             </ul>
             <div class="col-md-auto" style="padding: 10px 0 10px 30px;">
                 <form action="{{route('changeLang')}}" method="POST">
